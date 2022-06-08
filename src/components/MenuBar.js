@@ -1,7 +1,10 @@
 
 function MenuBar(){
     return (
-        <div>메뉴바</div>
+        <div className="nav_menu">
+            <div className="menu">영화</div>
+            <div className="menu">상영시간표</div>
+        </div>
     );
 }
 

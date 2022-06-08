@@ -1,6 +1,6 @@
 function Home(){
     return (
-        <div>영화</div>
+        <div>영화들</div>
     );
 }
 
