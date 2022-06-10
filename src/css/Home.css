@@ -1,0 +1,94 @@
+.home_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.movie_list,.event_list{
+    display: flex;
+    flex-direction : row;
+    width : 100%;
+    height: auto;
+    margin : 0 auto;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 1rem;
+    width: 15em;
+    height: auto;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.card .movie_name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.movie_list .next_left{
+    font-size: 3rem;
+    float: left;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.movie_list .next_right{
+    font-size: 3rem;
+    float: right;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.event_text{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size:1.5rem;
+    float:left
+}
+
+/*  이벤트 카드  */
+
+
+.event_card{
+    margin: 1rem;
+    width: 15em;
+    height: auto;
+    text-align: center;
+}
+
+.event_card img{
+    width: 100%;
+    height: auto;
+}
+
+.event_card .title{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.event_card .period{
+    font-size: 13px;
+}
+
+.event_list .next_left{
+    font-size: 2rem;
+    float: left;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.event_list .next_right{
+    font-size: 2rem;
+    float: right;
+    margin-top: 10%;
+    cursor: pointer;
+}
