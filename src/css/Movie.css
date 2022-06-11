@@ -1,0 +1,78 @@
+
+.movie_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.movie_container .movie_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.movie_container .title{
+    margin: 2.5rem 0rem 1rem 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.movie_container .sort{
+    margin-left: 1rem;
+}
+
+
+/*        차트카드         */
+.chart_card_container{
+    width: 15rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.chart_card_container .rank{
+    background-color: #fb4357;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    height: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.chart_card_container img{
+    width: 100%;
+    height: auto;
+}
+
+.chart_card_container .movie_name{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.chart_card_container .info_per{
+    margin:0 0.5rem;
+}
+
+.chart_card_container .info_day{
+    font-size: 0.8rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.chart_card_container .reservation{
+    background-color: #fb4458;
+    color: white;
+    margin: 0 0.5rem;
+    width: 6rem;
+    padding: 0.2rem 0.7rem;
+    border: white;
+}

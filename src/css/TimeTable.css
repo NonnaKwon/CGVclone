@@ -1,0 +1,26 @@
+.timetable_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.timetable_container .timetable_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.timetable_container .title{
+    margin: 2.5rem 0rem 1rem 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}

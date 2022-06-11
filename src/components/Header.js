@@ -13,7 +13,9 @@ function Header(){
           <div className="icons">
               <div className="icon"><img src="img/header/loginPassword.png"/><div>로그인</div></div>
               <div className="icon"><img src="img/header/loginJoin.png"/><div>회원가입</div></div>
-              <div className="icon"><img src="img/header/loginMember.png"/><div>MY CGV</div></div>
+              <Link to="/mypage">
+                  <div className="icon"><img src="img/header/loginMember.png"/><div>MY CGV</div></div>
+              </Link>
               <div className="icon"><img src="img/header/loginCustomer.png"/><div>고객센터</div></div>
           </div>
       </div>
