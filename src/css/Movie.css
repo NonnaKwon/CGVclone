@@ -11,7 +11,7 @@
 .movie_container .movie_list{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 1040px;
     width : 100%;
     height: auto;
@@ -35,7 +35,7 @@
 .chart_card_container{
     width: 15rem;
     height: auto;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .chart_card_container .rank{

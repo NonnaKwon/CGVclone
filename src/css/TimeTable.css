@@ -18,9 +18,84 @@
 }
 
 .timetable_container .title{
-    margin: 2.5rem 0rem 1rem 1rem;
-    padding-bottom: 1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
     font-size: 2rem;
     font-weight: bold;
     border-bottom: 2px solid black;
+}
+
+.timecard_container{
+    border-bottom: 2px solid #ababab;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+}
+
+.timecard_container .top .age{
+    color: white;
+    background-color: orange;
+    border-radius: 100%;
+    size: 1rem;
+    padding: 0.2rem;
+    font-weight: bold;
+    margin: 0.2rem;
+}
+
+.timecard_container .top .movie_title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.timecard_container .top .state{
+    border: 2px solid #75a6be;
+    color: #75a6be;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0.3rem;
+}
+
+.timecard_container .top .info{
+    color: #6c6c6c;
+    font-size: 0.8rem;
+}
+
+.timecard_container .seat{
+    margin: 1rem 2rem;
+}
+
+.timecard_container .seat .s{
+    color: #c7c7c7;
+    font-weight: bold;
+}
+
+.timecard_container .reservation{
+    display: flex;
+    flex-direction: row;
+}
+
+.timecard_container .reservation .time{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 5.5rem;
+    height: 4rem;
+    color: #646464;
+    border: 1px solid #646464;
+    font-weight: bold;
+}
+
+.timecard_container .reservation .time .num{
+    font-weight: normal;
+}
+
+.timecard_container .reservation .time_no{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 5.5rem;
+    height: 4rem;
+    color: #c0c0c0;
+    border: 1px solid #646464;
+    font-weight: bold;
 }

@@ -1,0 +1,54 @@
+
+.mypage_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.user_box{
+    margin: 1rem auto;
+    width: 80%;
+    height: 10rem;
+    background-color: #f3f3f3;
+    align-items: center;
+    text-align: center;
+}
+
+.user_box .info{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.user_box .name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.user_box .id{
+    font-size: 0.9rem;
+    color: #646464;
+}
+
+.user_box .hello{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.reservation_list{
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.reservation_list .title{
+    font-weight: bold;
+}
+
+.reservation_list .box{
+    width: 100%;
+    margin: 1rem auto;
+    border: 2px solid #a4a4a4;
+    padding: 2rem;
+}

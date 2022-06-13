@@ -81,12 +81,58 @@
 }
 
 Link{
-    text-decoration-line: none;
+    textDecoration: none;
     color : black;
 }
 
+.sideNav{
+    display: none;
+}
 
-@media (min-width: 400px) {
+
+@media (max-width: 740px) {
+    .container{
+        display: none;
+    }
+    .sideNav{
+        display: flex;
+        flex-direction: row;
+    }
+    .sideNav img{
+        width: auto;
+        height: 5rem;
+    }
+
+    .sideNav .icons_no{
+        display: none;
+    }
+
+    .sideNav .icons{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .icon{
+        width: auto;
+        height: 2em;
+        margin: 0 1rem;
+    }
+
+    .icon img{
+        width: auto;
+        height: 2.5em;
+        margin-left: 13%;
+    }
+
+    .sideNavbutton{
+        background-color: white;
+        border: white;
+    }
+
+    .sideNavbutton:hover{
+        cursor: pointer;
+    }
 
 }
 

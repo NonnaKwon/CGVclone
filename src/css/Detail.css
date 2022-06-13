@@ -1,0 +1,145 @@
+
+.detail_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+    align-items: center;
+}
+
+.detail_container .info_container{
+    display: flex;
+    flex-direction: row;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+    padding: 1rem;
+}
+
+.detail_container .info_container .imgWrap{
+    width: 20rem;
+    height: auto;
+}
+
+.detail_container .info_container .imgWrap img{
+    width: 100%;
+    height: auto;
+}
+
+.detail_container .info_container .textInfo{
+    width: 100%;
+    margin: 0 2rem;
+    white-space: pre-wrap;
+}
+
+.detail_container .info_container .textInfo .title{
+    font-size: 1.5rem;
+}
+.detail_container .info_container .textInfo .per{
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.detail_container .info_container .textInfo .text_de{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.detail_container .info_container .textInfo .state{
+    border: 2px solid #ccab88;
+    color: #ccab88;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0.3rem;
+}
+
+.detail_container .info_container .textInfo .reservation{
+    background-color: #fb4458;
+    color: white;
+    margin: 1rem 0;
+    width: 6.3rem;
+    height: 2rem;
+    padding: 0.2rem 0.7rem;
+    border: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.detail_container .review_btn{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1.2rem;
+    padding: 3rem 2rem;
+    background-color: #eaeaea;
+    margin-bottom: 2rem;
+}
+
+.detail_container .review_btn .info{
+    flex-basis: 80%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.detail_container .review_btn .write{
+    background-color: #fb4458;
+    color: white;
+    margin: 0 0.5rem;
+    width: 6rem;
+    padding: 1.3rem 0.7rem;
+    border: white;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.detail_container .review_btn .write:hover{
+    cursor: pointer;
+}
+
+.detail_container .review{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-top : 2px solid #9d9d9d;
+}
+
+.review_write_no{
+    display: none;
+}
+
+.review_write{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.review_write .star{
+    width: 5rem;
+    height: 3rem;
+}
+
+.review_write .comment_write{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.review_write .comment_write input{
+    width: 100%;
+    height: 2rem;
+}
+
+.review_write .comment_write button{
+    width: 3rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+}
+
