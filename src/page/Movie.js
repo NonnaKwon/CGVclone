@@ -75,6 +75,7 @@ function Movie(){
                 <div className="movie_list">
                     <ChartCard movie={movies[6]} rank={7}/>
                     <ChartCard movie={movies[7]} rank={8}/>
+                    <div className="chart_card_container"></div>
                 </div>
             </div>
         );

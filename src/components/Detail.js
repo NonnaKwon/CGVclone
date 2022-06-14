@@ -1,5 +1,5 @@
 import '../css/Detail.css';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import { useParams,Link } from 'react-router-dom';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import ReviewCard from "./ReviewCard";
@@ -7,22 +7,10 @@ import moment from 'moment';
 import axios from 'axios';
 
 
-//id 로 comment get요청하기
-const comment_data = [
-    {
-        user_id : 1,
-        content : "라라라",
-        created_date : "2022.03.09",
-        likes : 1
-    }
-]
-
-function Detail({movie_data}){
+function Detail({movie_data,user}){
     const [movie,setMovie] = useState(movie_data);
-    const [comment,setComment] = useState(comment_data);
     const [isWrite,setWrite] = useState(false);
     const {id} = useParams();
-
     var index;
     for(var i=0;i<8;i++){
            if(movie[i]._id === id){
@@ -45,25 +33,36 @@ function Detail({movie_data}){
     const onClickSubmit = () => {
         axios.post("http://kitcapstone.iptime.org:3001/review/"+id, null, {
             params: {
+                'userId' : user.id,
                 'score': score,
                 'content': content
             }
         })
-            .then((err,data)=>{
-                if(err){
-                    console.log(err);
-                }
-                if(data){
-                    if(data.data("ok")){
-                        alert("ok");
-                    }
-                    else {
-                        alert(data.data);
-                    }
-                }
-
-            })
+            .then((res)=>{
+                alert("리뷰가 등록되었습니다.");
+                })
     }
+
+    //리뷰 요청
+    const [comment, setComment] = useState([]);
+    const sendMoviesRequest = async() => {
+        axios.get('http://kitcapstone.iptime.org:3001/review/'+id)
+            .then((res)=> {
+                    setComment(res.data);
+                    console.log(res.data);
+                    console.log("성공");
+                    setTimeout(50000);
+                },(error) =>{
+                    console.log(error);
+                }
+            );
+    };
+
+    useEffect(()=>{
+        sendMoviesRequest();
+
+    },[]);
+
 
     const review = ()=>{
         if(comment.length === 0){
@@ -76,7 +75,7 @@ function Detail({movie_data}){
             return(
                 <div className="isreview">
                     {comment.map((cmt)=>(
-                        <ReviewCard comment={cmt}/>
+                        <ReviewCard comment={cmt} user={user}/>
                     ))}
                 </div>
             );
@@ -97,6 +96,7 @@ function Detail({movie_data}){
                             감독 : {movie[index].director} / 배우 : {movie[index].actors}{'\n'}
                             장르 : {movie[index].genre}{'\n'}
                             개봉 : {moment(movie[index].open_date).format('YYYY-MM-DD')}{'\n'}
+                            줄거리 : {movie[index].description}{'\n'}
                         </div>
                         <button className="reservation">
                             예매하기

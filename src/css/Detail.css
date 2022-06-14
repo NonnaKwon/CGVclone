@@ -143,3 +143,67 @@
     color: white;
 }
 
+.review_write .comment_write button:hover{
+    cursor: pointer;
+}
+
+.isreview{
+    width: 100%;
+}
+
+.review_card_container{
+    width: 100%;
+    margin: 0.5rem;
+    border: 1px solid #bdbdbd;
+    padding: 1rem;
+}
+
+.review_card_container .user{
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}
+
+.review_card_container .comment{
+    background-color: #efefef;
+    padding: 2rem;
+    margin: 1rem 0.5rem;
+}
+
+.review_card_container .no{
+    display: none;
+}
+
+.review_card_container .on{
+    display: flex;
+    flex-direction: row;
+}
+
+.review_card_container input{
+    margin-left: 0.4rem;
+}
+
+
+.review_card_container .day{
+    font-size: 0.7rem;
+    color: #808080;
+    margin: 0.5rem;
+}
+
+.review_card_container .like{
+    margin: 0.5rem;
+    font-size: 0.7rem;
+}
+.review_card_container button{
+    background-color: #000000;
+    color: white;
+    border: white;
+    margin-left: 0.4rem;
+}
+
+.review_card_container .like button{
+    background-color: white;
+    border: white;
+}
+.review_card_container button:hover{
+    cursor: pointer;
+}

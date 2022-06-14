@@ -4,32 +4,6 @@ import {useEffect, useState} from "react";
 import axios from 'axios'
 import '../css/Home.css';
 
-// const event_data=[
-//     {   id:1,
-//         title:"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ",
-//         period:"2222-22-22~2222-33-33",
-//         image:"img/event/16521431715560.jpg"
-//     },
-//     {   id:2,
-//         title:"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁasdasdfdㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ",
-//         period:"2222-22-22~2222-33-33",
-//         image:"img/event/16521431715560.jpg"
-//     },
-//     {   id:3,
-//         title:"ㅁㅁㅁㅁasdasdawfwegㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ",
-//         period:"2222-22-22~2222-33-33",
-//         image:"img/event/16521431715560.jpg"
-//     },
-//     {   id:4,
-//         title:"ㅁㅁ마지막ㅁ",
-//         period:"2222-22-22~2222-33-33",
-//         image:"img/event/16534549224840.jpg"
-//     }
-//
-// ];
-
-// var event_data;
-
 function Home({movie_data}){
     const [event_num,setEventN] = useState(0);
     const [page_num,setPageN] = useState(0);

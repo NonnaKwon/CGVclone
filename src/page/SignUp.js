@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
+import '../css/SignUp.css';
 
-function SignUp(){
+function SignUp({user}){
     const [id, setId] = useState("");
     const [pwd, setPwd] = useState("");
     const [name, setName] = useState("");
@@ -29,7 +30,6 @@ function SignUp(){
                     console.log(err);
                 }
                 if(data){
-
                     if(data.data("ok")){
                         alert("ok");
                     }
@@ -41,27 +41,34 @@ function SignUp(){
             })
     }
 
-    return(
-        <div className="signup_container">
-            <div className="title">
-                회원가입
+    if (user.id === "") {
+        return (
+            <div className="signup_container">
+                <div className="signup_box">
+                    <div className="title">
+                        <div className="id">
+                            아이디 : <input type="text" name="input_id" value={id} onChange={handleInputId}/>
+                        </div>
+                        <div className="name">
+                            이름 : <input type="text" name="input_name" value={name} onChange={handleInputName}/>
+                        </div>
+                        <div className="password">
+                            패스워드 : <input type="text" name="input_pwd" value={pwd} onChange={handleInputPwd}/>
+                        </div>
+                        <div className="submit">
+                            <button type="button" onClick={onClickSign}>가입</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form action="">
-                <div className="id">
-                    아이디 : <input type="text" name="input_id" value={id} onChange={handleInputId}/>
-                </div>
-                <div className="name">
-                    이름 : <input type="text" name="input_name" value={name} onChange={handleInputName}/>
-                </div>
-                <div className="password">
-                    패스워드 : <input type="text" name="input_pwd" value={pwd} onChange={handleInputPwd}/>
-                </div>
-                <div className="submit">
-                    <button type="button" onClick={onClickSign}>가입</button>
-                </div>
-            </form>
-        </div>
-    );
+        );
+    }else{
+        return (
+            <div className="signup_container">
+                <div className="signup_box">로그인 되어있습니다.</div>
+            </div>
+        );
+    }
 }
 
 export default SignUp;

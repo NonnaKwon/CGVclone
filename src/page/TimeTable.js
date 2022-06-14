@@ -27,14 +27,14 @@ function TimeTable(){
             <div className="timetable_container">
                 <div className="title">상영시간표</div>
                 <div className="timetable_list">
-                    <TimeCard time={times[8]} time2={times[9]}/>
-                    <TimeCard time={times[10]} time2={times[11]}/>
+                    <TimeCard time={times[0]} time2={times[1]}/>
+                    <TimeCard time={times[2]} time2={times[3]}/>
                 </div>
             </div>
         );
     }else{
         return(
-          <div>안됌</div>
+          <div></div>
         );
     }
 }

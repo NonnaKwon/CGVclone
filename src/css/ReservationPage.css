@@ -1,0 +1,107 @@
+.reser_page_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width : 100%;
+    height: auto;
+    margin : 1rem auto;
+}
+
+.select_container{
+    display: flex;
+    flex-direction : row;
+    width : 100%;
+}
+
+.select_container .movie,.select_container .time{
+    flex: 1 1 50%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+
+.select_container .movie .movie_list,.select_container .time .time_list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.select_container .movie .movie_list .sel_movie,.select_container .time .time_list .sel_time{
+    width: 100%;
+    text-align: left;
+}
+
+.select_container .category{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+.select_container button{
+    background-color: #f2f0e5;
+    border: none;
+    height: 2rem;
+    margin: 0.1rem 0;
+}
+
+
+.select_container .movie .movie_list .sel_movie .age{
+    color: white;
+    background-color: orange;
+    border-radius: 100%;
+    size: 1rem;
+    padding: 0.2rem;
+    font-weight: bold;
+    margin: 0.2rem;
+}
+
+.select_container .title{
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.selected_container{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 3rem 0;
+    background-color: black;
+    border:1px solid black;
+}
+
+.selected_container .info{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid #858181;
+}
+
+.selected_container .seleted{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.selected_container .seleted .name,.selected_container .seleted .day{
+    flex : 1 1 5rem;
+    color: white;
+}
+
+.selected_container .seleted .action{
+    background-color: #fb4357;
+    width: 5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.selected_container .seleted .action_no{
+    background-color: #8a8a8a;
+    width: 5rem;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}

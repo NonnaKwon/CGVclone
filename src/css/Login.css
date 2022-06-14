@@ -6,5 +6,29 @@
     width : 100%;
     height: auto;
     margin : 1rem auto;
+    align-items: center;
 }
 
+
+.login_container .login_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    width: 80%;
+    height: 20rem;
+    padding: 8rem 2rem;
+    font-size: 1rem;
+
+}
+
+.login_container .login_box button{
+    margin: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.login_container .login_box .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}

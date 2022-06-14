@@ -6,4 +6,22 @@
     width : 100%;
     height: auto;
     margin : 1rem auto;
+    align-items: center;
+}
+
+.signup_container .signup_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    width: 80%;
+    height: 20rem;
+    padding: 8rem 2rem;
+    font-size: 1rem;
+}
+
+.signup_container .signup_box button{
+    margin: 1rem;
+    background-color: black;
+    color: white;
 }

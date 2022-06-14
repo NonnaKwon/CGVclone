@@ -1,21 +1,9 @@
 import {useState,useEffect} from "react";
 import "../css/MyPage.css";
 
-const user_data = [{
-    login_id : "non1233",
-    name : "권새롬",
-}];
 
-const reservation_data = [
-    // {
-    //     movie_id:1,
-    //     reservation:"범죄도시",
-    // }
-]
-
-function MyPage(){
-    const [user,setUser] = useState(user_data);
-    const [reser,setReser] = useState(reservation_data);
+function MyPage({user}){
+    const [reser,setReser] = useState([]);
 
     const reservationManage = ()=>{
         if(reser.length === 0){
@@ -33,24 +21,33 @@ function MyPage(){
         }
     }
 
-    return(
-        <div className="mypage_container">
-            <div className="user_box">
-                <div className="info">
-                    <span className="name">{user[0].name}님</span>
-                    <span className="id">{user[0].login_id}</span>
+    if(user.id !== ""){
+        return(
+            <div className="mypage_container">
+                <div className="user_box">
+                    <div className="info">
+                        <span className="name">{user.id}님</span>
+                    </div>
+                    <div className="hello">환영합니다!</div>
                 </div>
-                <div className="hello">환영합니다!</div>
+                <div className="reservation_list">
+                    <div className="title">
+                        MY 예매내역
+                    </div>
+                    <div className="box">
+                        {reservationManage()}
+                    </div>
+                </div>
             </div>
-            <div className="reservation_list">
-                <div className="title">
-                    MY 예매내역
-                </div>
-                <div className="box">
-                    {reservationManage()}
-                </div>
-            </div>
-        </div>
-    );
+        );
+    }else{
+        return (
+          <div className="mypage_container">
+              <div className="user_box">
+                  <div className="hello">로그인 해주세요.</div>
+              </div>
+          </div>
+        );
+    }
 }
 export default MyPage;
